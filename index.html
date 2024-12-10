@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق حماية المستهلك</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>تطبيق حماية المستهلك</h1>
+            <p>قم بتقديم شكواك بسهولة وسرعة</p>
+        </header>
+
+        <form id="complaint-form">
+            <label for="name">اسم المستهلك:</label>
+            <input type="text" id="name" placeholder="أدخل اسمك" required>
+            
+            <label for="complaint">تفاصيل الشكوى:</label>
+            <textarea id="complaint" placeholder="أدخل شكواك" required></textarea>
+            
+            <button type="submit">إرسال الشكوى</button>
+        </form>
+
+        <section id="complaints-section">
+            <h2>الشكاوى المقدمة:</h2>
+            <ul id="complaints-list"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
